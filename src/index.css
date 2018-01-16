@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Seat {
+  background-color: #4FC3F7;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+
+.Seat--enabled {
+  cursor: pointer;
+}
+
+.Seat--enabled:hover {
+  background-color: #03A9F4;
+}
+
+.Seat--selected {
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.Seat--reserved {
+  background-color: #E0E0E0;
+  cursor: not-allowed;
+}
+
+.Row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Helvetica';
+  margin-bottom: 10px;
+}
+
+.Row--enabled:hover {
+  background-color: #F5F5F5;
+}
+
+.Row--selected {
+  background-color: #F5F5F5;
+}
+
+.RowNumber {
+  color: #9E9E9E;
+  font-weight: normal;
+  text-align: center;
+  width: 35px;
+}
